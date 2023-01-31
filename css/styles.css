@@ -45,7 +45,7 @@ line-height: 1.33;
 
 letter-spacing: 0.03em;
 
-color: var(--secondary-text-color);
+color:  #2E2F42;;
 
 }
 /* site-nav */
@@ -92,9 +92,9 @@ font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 
-text-align: center;
-letter-spacing: 0.02em;
 
+letter-spacing: 0.02em;
+/* color will be changed */
 color: teal ;
 }
 
@@ -135,7 +135,8 @@ border-radius: 4px;
      
     letter-spacing: 0.02em;
     
-    color: var(--secondary-text-color)
+    color: var(--secondary-text-color);
+
 }
 .policy-text{
 font-family: var(--primary-font);
@@ -158,7 +159,7 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.1;
 
-text-align: center;
+
 letter-spacing: 0.02em;
 text-transform: capitalize;
 
@@ -176,7 +177,7 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.1;
 
-text-align: center;
+
 letter-spacing: 0.02em;
 text-transform: capitalize;
 
@@ -190,7 +191,6 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 
-text-align: center;
 letter-spacing: 0.02em;
 
 color: var(--secondary-text-color);
@@ -203,7 +203,6 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 
-text-align: center;
 letter-spacing: 0.02em;
 
 color: var(--text-color);
@@ -239,6 +238,12 @@ color: #E7E9FC;
 /* ============ /Footer ========== */
 
 /* ========= Filter ====== */
+
+.filter-item-main:hover,
+.filter-item-main:active{
+    color: black;
+    background-color: tomato;
+}
 .filter-item-main{
 font-family: var(--primary-font)
 font-style: normal;
@@ -256,6 +261,14 @@ color: #FFFFFF;
 background: #404BBF;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
+
+cursor: pointer;
+}
+
+.filter-item-add:hover,
+.filter-item-add:active{
+
+    color: black
 }
 
 .filter-item-add{
@@ -277,7 +290,7 @@ background: #F4F4FD;
 
 border: 1px solid #E7E9FC;
 border-radius: 4px;
-
+cursor: pointer;
 }
 /* ========= /Filter ===== */
 
