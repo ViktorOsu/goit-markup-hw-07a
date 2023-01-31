@@ -1,0 +1,307 @@
+
+:root{
+--primary-font 'Roboto', sans-serif;
+--secondary-font 'Raleway', sans-serif;
+--secondary-text-color #2E2F42;
+--text-color #434455;
+}
+
+body{
+   
+}
+.logo{
+    
+}
+.list {
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+
+/* ======== Components ========== */
+
+/* ======== / Components ======== */
+
+/*========= Header ========*/
+
+.logo{
+font-family: var(--secondary-font);
+font-weight: 800;
+font-size: 18px;
+line-height: 1.5;
+letter-spacing: 0.03em;
+color: #4D5AE5;
+
+text-decoration: none;
+}
+
+.logo-part-upper{
+font-family: var(--secondary-font);
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+
+letter-spacing: 0.03em;
+
+color: var(--secondary-text-color);
+
+}
+/* site-nav */
+.menu-link{
+font-family: var(--primary-font;)
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--secondary-text-color);
+}
+
+.contact-email,
+.contact-phone-number{
+font-family:var(--primary-font;)
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--text-color);
+}
+
+.menu-link:hover,
+.menu-link:focus{
+  color: blue;  
+}
+
+.contact-email:hover,
+.contact-email:focus{
+    color: blue;
+}
+.contact-phone-number:hover,
+.contact-phone-number:focus{
+    color: blue;
+}
+
+/* =============== / Heder========== */
+/* =============== h e r o  =======*/
+
+.hero-title{
+ 
+font-family: var(--primary-font);
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: teal ;
+}
+
+
+.modul-btn{
+
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+   
+    
+    align-items: center;
+    letter-spacing: 0.04em;
+    
+    color: #FFFFFF;
+
+width: 169px;
+height: 56px;
+left: 636px;
+top: 428px;
+
+cursor: pointer;
+
+color: #ffffff ;
+background: #4D5AE5;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+/* =========== /hero ========== */
+/* =========== Policy ========= */
+.policy-item{
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+     
+    letter-spacing: 0.02em;
+    
+    color: var(--secondary-text-color)
+}
+.policy-text{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5px;
+
+letter-spacing: 0.02em;
+
+color: var(--text-color);
+}
+/* =========== /Policy ======== */
+
+/* =========== Products ======= */
+.product-title{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+
+color: var(--secondary-text-color);
+
+}
+/* =========== /Products ======= */
+
+/* =========== Our Team ======== */
+.team-title{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1;
+
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+color: var(--secondary-text-color);
+}
+
+.team-member{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--secondary-text-color);
+}
+
+.team-position{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: var(--text-color);
+}
+
+/* =========== /Our Team ======== */
+
+/* ============ Footer ========== */
+.logo-part-down{
+font-family: var(--secondary-font);
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 1.17x;
+
+
+letter-spacing: 0.03em;
+
+
+color: #F4F4FD;
+}
+.final-text{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5x;
+
+letter-spacing: 0.02em;
+
+color: #E7E9FC;
+}
+/* ============ /Footer ========== */
+
+/* ========= Filter ====== */
+.filter-item-main{
+font-family: var(--primary-font)
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5x;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+background: #404BBF;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+}
+
+.filter-item-add{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #4D5AE5;
+
+background: #F4F4FD;
+
+border: 1px solid #E7E9FC;
+border-radius: 4px;
+
+}
+/* ========= /Filter ===== */
+
+/* ========= Portfolio==== */
+.portfolio-item-name{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.5;
+
+letter-spacing: 0.02em;
+
+color:var(--secondary-text-color);
+}
+.portfolio-item-descr{
+font-family: var(--primary-font);
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+
+letter-spacing: 0.02em;
+
+color:var(--text-color);
+}
+/* ========= /Portfolio ==== */
