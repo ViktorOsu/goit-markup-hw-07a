@@ -9,6 +9,7 @@
 body{
   font-family: 'Roboto', sans-serif; 
   font-weight: 400;
+  font-style: normal;
   color: #2E2F42
 }
 .logo{
@@ -40,7 +41,6 @@ text-decoration: none;
 
 .logo-part-upper{
 font-family: var(--secondary-font);
-font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.33;
@@ -60,9 +60,7 @@ color: #2E2F42
 
 .contact-email,
 .contact-phone-number{
-font-family:var(--primary-font);
 font-style: normal;
-font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -90,25 +88,23 @@ color: blueviolet
 /* =============== h e r o  =======*/
 
 .hero-title{
- 
-font-family: var(--primary-font);
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
 
-
 letter-spacing: 0.02em;
-/* color will be changed */
-color: teal ;
+
+color:#FFFFFF;
+background: #2E2F42
 }
 
 
 .modul-btn{
 
-    font-family: var(--primary-font);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
+font-family: var(--primary-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
    
     
     
@@ -126,24 +122,20 @@ border-radius: 4px;
 /* =========== /hero ========== */
 /* =========== Policy ========= */
 .policy-item{
-   
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
   }
 .policy-text{
-font-style: normal;
 font-size: 16px;
-line-height: 1.5px;
+line-height: 1.5;
 letter-spacing: 0.02em;
 }
 /* =========== /Policy ======== */
 
 /* =========== Products ======= */
 .product-title{
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.1;
@@ -155,7 +147,6 @@ text-transform: capitalize;
 
 /* =========== Our Team ======== */
 .team-title{
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.1;
@@ -166,7 +157,6 @@ text-transform: capitalize;
 }
 
 .team-member{
-font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
@@ -175,7 +165,6 @@ letter-spacing: 0.02em;
 }
 
 .team-position{
-font-style: normal;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -185,21 +174,22 @@ color: var(--text-color);
 /* =========== /Our Team ======== */
 
 /* ============ Footer ========== */
+.footer{
+    background: #2E2F42;
+}
 .logo-part-down{
 font-family: var(--secondary-font);
-font-style: normal;
 font-weight: 800;
 font-size: 18px;
-line-height: 1.17x;
+line-height: 1.17;
 
 letter-spacing: 0.03em;
 
 color: #F4F4FD;
 }
 .final-text{
-font-style: normal;
 font-size: 16px;
-line-height: 1.5x;
+line-height: 1.5;
 letter-spacing: 0.02em;
 color: #E7E9FC;
 }
@@ -210,15 +200,15 @@ color: #E7E9FC;
 
 .filter-item-main:hover,
 .filter-item-main:active{
-    color: black;
-    background-color: tomato;
+    color: white;
+    background-color: blueviolet;
 }
 .filter-item-main{
 font-family: var(--primary-font);
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
-line-height: 1.5x;
+line-height: 1.5;
 
 
 color: #FFFFFF;
@@ -232,8 +222,8 @@ cursor: pointer;
 
 .filter-item-add:hover,
 .filter-item-add:active{
-    color: black;
-    background-color: blue;
+    color: white;
+    background-color: blueviolet;
 }
 
 .filter-item-add{
@@ -257,14 +247,12 @@ cursor: pointer;
 
 /* ========= Portfolio==== */
 .portfolio-item-name{
-font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
 .portfolio-item-descr{
-font-style: normal;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
