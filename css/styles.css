@@ -37,16 +37,13 @@ letter-spacing: 0.03em;
 color: #4D5AE5;
 
 text-decoration: none;
+text-transform: uppercase;
 }
 
 .logo-part-upper{
-font-family: var(--secondary-font);
-font-weight: 800;
-font-size: 18px;
-line-height: 1.33;
 
-letter-spacing: 0.03em;
 color: #2E2F42 ;
+
 }
 /* site-nav */
 .menu-link{
@@ -55,7 +52,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #2E2F42 
+color: #2E2F42; 
 }
 
 .contact-email,
@@ -73,7 +70,7 @@ color: var(--text-color);
 }
 
 .menu-link:active{
-color: blueviolet
+color: blue
 }
 .contact-email:hover,
 .contact-email:focus{
@@ -106,11 +103,7 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
    
-    
-    
-    
-    color: #FFFFFF;
-
+color: #FFFFFF;
 
 cursor: pointer;
 
@@ -178,14 +171,11 @@ color: var(--text-color);
     background: #2E2F42;
 }
 .logo-part-down{
-font-family: var(--secondary-font);
-font-weight: 800;
-font-size: 18px;
+
 line-height: 1.17;
 
-letter-spacing: 0.03em;
-
 color: #F4F4FD;
+
 }
 .final-text{
 font-size: 16px;
@@ -200,8 +190,8 @@ color: #E7E9FC;
 
 .filter-item-main:hover,
 .filter-item-main:active{
-    color: white;
-    background-color: blueviolet;
+    color: #4D5AE5;
+    background-color: #E7E9FC;
 }
 .filter-item-main{
 font-family: var(--primary-font);
@@ -223,7 +213,7 @@ cursor: pointer;
 .filter-item-add:hover,
 .filter-item-add:active{
     color: white;
-    background-color: blueviolet;
+    background-color:blue;
 }
 
 .filter-item-add{
