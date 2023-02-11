@@ -66,7 +66,7 @@ button{
 /*========= Headerr ========*/
 
 .page-header{
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--footer-text-color);
 }
 .logo{
 font-family: var(--secondary-font);
@@ -299,19 +299,72 @@ line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--text-color);
+margin-bottom: 8px;
 }
 
 .social-list{
     display: flex;
+    justify-content: space-between;
+    width: 232px;
+    margin: 0 auto;
 }
 
-.social-list-item-icon{
-    width: 16px;
-    height: 16px;
-border: solid ;
+.social-list-item{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: var(--background-href-color);
+
 }
+
+.social-list-item-link{
+    background-size: 16px 16px;
+}
+
 
 /* =========== /Our Team ======== */
+
+/* =========== Customers ======== */
+/* .customers-item-icon{
+    width: 168px;
+    height: 88px;
+} */
+
+.customer-section{
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+
+.customers-title {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: var(--title-color);
+margin-bottom: 72px;
+}
+.customers-list {
+    display: flex;
+    column-gap: 24px;
+}
+
+.customers-item-icon {
+width: 168px;
+height: 88px;
+fill: #8E8F99 ;
+box-sizing: border-box;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+
+}
+
+/* ===========/Customers========= */
+
+
 
 /* ============ Footer ========== */
 .footer{
@@ -392,9 +445,7 @@ align-items: center;
 justify-content: center;
 padding-top: 96px;
 }
-.filter-list:not(:last-child){
-    /* margin-right: 24 px; */
-}
+
 
 /* ========= /Filter ===== */
 
