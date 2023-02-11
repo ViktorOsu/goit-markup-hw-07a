@@ -51,6 +51,7 @@ button{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 1px solid red;
    }
 
 .section{
@@ -327,7 +328,10 @@ margin-bottom: 8px;
  background-color: var(--filter-active-btn-ground);
 }
 
-
+.social-list-item-link:hover .social-list-item-icon,
+.social-list-item-link:focus .social-list-item-icon{
+    fill: black;
+  }
 /* =========== /Our Team ======== */
 
 /* =========== Customers ======== */
@@ -414,6 +418,11 @@ margin-top: 16px;
     background-color: var(--text-color);
   }
 
+  .social-media-item-link:hover .social-media-item-icon,
+  .social-media-item-link:focus .social-media-item-icon{
+    fill: black;
+  }
+
 .social-media-title{
     font-weight: 500;
     font-size: 16px;
@@ -470,7 +479,7 @@ font-size: 16px;
 line-height: 1.5;
 color: var(--background-href-color);
 background:var(--filter-btn-ground);
-border: 1px solid #E7E9FC;
+border: 1px solid var(--footer-text-color);
 border-radius: 4px;
 cursor: pointer;
 }
@@ -499,6 +508,7 @@ display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
+
 }
 
 
@@ -516,14 +526,14 @@ color:var(--text-color);
 }
 
 .portfolio-card{
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(6418424.jpg);
-background-blend-mode: soft-light, normal;
+
 }
+
 .portfolio-item{
 box-sizing: border-box;
-
 background: var(--secondary-text-color);
-border: 1px solid #E7E9FC;
+
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item-card-descr{
