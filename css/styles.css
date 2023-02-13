@@ -534,11 +534,40 @@ color:var(--text-color);
 
 .portfolio-item{
 background: var(--secondary-text-color);
+
 }
 
 .portfolio-item:hover,
 .portfolio-item:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-top-text{
+transform: translateY(0);
+}
+
+.portfolio-top-wrap{
+position: relative;
+overflow: hidden;
+}
+
+.portfolio-top-text{
+position: absolute;
+top: 0;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--filter-btn-ground);
+background-color: var(--background-href-color);
+background-blend-mode: soft-light;
+mix-blend-mode: normal;
+padding-top: 40px;
+padding-left: 32px;
+padding-right: 32px;
+height: 100%;
+transform: translateY(100%);
+transition: transform 500ms;
+overflow: auto;
 }
 
 .portfolio-card-description{
@@ -550,3 +579,62 @@ background: var(--secondary-text-color);
     border-top: none;
 }
 /* ========= /Portfolio ==== */
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.4);
+    transition: opacity 500ms linear, visibility 500ms linear;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 500ms linear;
+    width: 408px;
+    min-height: 576px;
+    border-radius: 4px;
+    background: #FCFCFC
+}
+
+.backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) scale(0);
+
+}
+.modal-close{
+    position: absolute;
+    top:24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--footer-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-close:hover,
+.modal-close:focus{
+    background-color: var(--filter-active-btn-ground);
+}
+
+.modal-close-icon{
+    fill: var(--title-color);
+}
+
+
+.modal-close:hover .modal-close-icon,
+.modal-close:focus .modal-close-icon{
+    fill: var(--secondary-text-color);
+}
+
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
