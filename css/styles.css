@@ -642,9 +642,10 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms ease;
     width: 408px;
-    height: 576px;
+    height: 584px;
     border-radius: 4px;
     background:var(--modal-background);
+    padding: 72px 24px 24px 24px;
  }
 
 .backdrop.is-hidden .modal{
@@ -687,4 +688,48 @@ transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+.modal-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--title-color);
+margin-bottom: 16px;
+}
+
+.modal-field{
+    margin-bottom: 10px;
+}
+
+.modal-icon{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-wrap{
+    position: relative;
+}
+
+.modal-input{
+    width: 360px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 16px;
+    color: #8F8E99;
+    outline: transparent;
+}
+.modal-input:focus{
+    border-color: var(--background-href-color);
+}
+
+.modal-input:focus + .modal-icon{
+    fill: #4D5AE5;
+}
+.modal-input::placeholder{
+
 }
