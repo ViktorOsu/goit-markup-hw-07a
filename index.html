@@ -414,55 +414,145 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
+
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="modal-form">
-          <div class="modal-field">
-          <label class="modal-lable" for="name">Name</label>
-          <div class="input-wrap">
-          <input
-            type="text"
-            name="Name"
-            class="modal-input"
-            placeholder="name"
-            required
-          />
-          <svg class="modal-icon" width="18" height="18">
-            <use href="./images/sprite.svg#icon-person"></use>
-          </svg>
-        </div>
-        </div>
-          <div class="modal-field">
-          <label class="modal-lable" for="phone">Phone</label>
-          <div class="input-wrap">
-           <input
-            type="tel"
-            name="Phone"
-            class="modal-input"
-            placeholder="phone"
-            required
-          />
-          <svg class="modal-icon" width="18" height="24">
-            <use href="./images/sprite.svg#icon-phone"></use>
-          </svg>
+
+        <form action="" class="modal-form">
+          <ul class="modal-list list">
+            <li class="modal-item">
+              
+              <label for="name" class="modal-lable">Name</label>
+                <div class="input-wrap">
+                <input 
+                type="text" 
+                class="modal-input" 
+                placeholder="Bobby" 
+                required/>
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-person"></use>
+                </svg>
+              </div>
+             
+            
+            </li>
+            <li class="modal-item">
+              <label for="phone" class="modal-lable">Phone</label>
+                <div class="input-wrap">
+                <input 
+                type="tel" 
+                class="modal-input"
+                 placeholder="+380-(67)-111-11-11" 
+                 autocomplete="on"
+                 required/>
+                 <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+                </div>
+              
+            </li>
+            <li class="modal-item">
+              <label for="email" class="modal-lable">Email</label>
+                <div class="input-wrap">
+                <input 
+                type="email" 
+                class="modal-input" 
+                placeholder="@ukr.net" 
+                autocomplete="on"/>
+                <svg class="modal-icon" width="18" height="24">
+                  <use href="./images/sprite.svg#icon-email"></use>
+                </svg>
+              </div>
+              
+            </li>
+
+            <li class="modal-item">
+              <label for="comment">Comment</label>
+              <textarea 
+              class="modal-comments" 
+              name="" 
+              id="comment"
+              autofocus>Text input</textarea>
+            </li>
+          </ul>
+
+          <div class="modal-check">
+          <label for=""></label>
+          <input type="checkbox" class="check-box">
+          <p class="modal-accept">I accept the terms and conditions of the 
+           <span class="modal-policy">Privacy Policy</span></p>
           </div>
-        </div>
-          <div class="modal-field">
-          <label class="modal-lable" for="email">Email</label>
-          <div class="input-wrap">
-          <input
-            type="email"
-            name="Email"
-            class="modal-input"
-            placeholder="email"
-            required
-          />
-          <svg class="modal-icon" width="18" height="24">
-            <use href="./images/sprite.svg#icon-email"></use>
-          </svg>
-        </div>
-        </div>
-          <button type="submit">Send</button>
+          
+          <button type="submit" class="modal-submit">Send</button>
         </form>
+
+        <!-- <form class="modal-form"> -->
+        <!-- Name -->
+        <!-- <div class="modal-field">
+            <label class="modal-lable" for="name">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="Name"
+                class="modal-input"
+                placeholder="name"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div> -->
+
+        <!--  / Name -->
+        <!--  Phone  -->
+        <!-- <div class="modal-field">
+            <label class="modal-lable" for="phone">Phone</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="Phone"
+                class="modal-input"
+                placeholder="phone"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div> -->
+        <!-- / Phone -->
+        <!-- Email   -->
+        <!-- <div class="modal-field">
+            <label class="modal-lable" for="email">Email</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="Email"
+                class="modal-input"
+                placeholder="email"
+                required
+              />
+              <svg class="modal-icon" width="18" height="24">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div> -->
+        <!-- / Email  -->
+        <!-- Text area -->
+        <!-- <div class="modal-field">
+            <label class="modal-lable" for="comment" class="modal-textarea">Comment</label>
+            <div class="input-wrap"></div>
+            <textarea 
+            name="user-text" 
+            id="user-email" 
+            cols="30" 
+            rows="10"
+            placeholder="Text input"></textarea>
+          </div>
+         -->
+        <!-- /Text area -->
+        <!-- <button type="submit">Send</button>
+        </form> -->
       </div>
     </div>
     <script src="./js/modal.js"></script>
