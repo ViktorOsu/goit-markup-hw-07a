@@ -29,6 +29,20 @@ body{
 .link{
     text-decoration: none;
 }
+
+.visually-hidden{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -260,8 +274,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 8px;
   }
 .policy-text{
-line-height: 1.5;
-letter-spacing: 0.02em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 /* =========== /Policy ======== */
 
@@ -748,34 +762,77 @@ overflow: auto;
     line-height: 1.33;
     letter-spacing: 0.04em;
     color: #757575;
-    margin-left: 8px;
+    display: flex;
+   align-items: first baseline;
 }
 
-.modal-policy{
+.modal-accept span {
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+}
+
+.modal-check-box:checked + .modal-accept span {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+   }
+/* .modal-accept::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    margin-right: 8px;
+ }
+
+.modal-check-box:checked + .modal-accept::before{
+    background-color: #404BBF;
+    border: none;
+    background-image: url(../images/Vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+/* .modal-policy{
    
     text-decoration-line: underline;
     color: #4D5AE5;
-}
+} */
 
 .modal-check{
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 24px;
-}
-.check-box{
-   border: 1.25px solid #2E2F42;
-   border-radius: 2px;
+ 
+  
 }
 
 .modal-submit{
-    width: 169px;
-    height: 56px;
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    fill: #999999;
+    padding: 16px 32px;
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%);
+    
 }
+
+
+
+
 /* 
 .modal-field{
     margin-bottom: 10px;
