@@ -1,7 +1,4 @@
 
-.html{
-    scroll-behavior: smooth;
-}
 
 :root{
 --primary-font: 'Roboto', sans-serif;
@@ -17,12 +14,7 @@
 --modal-background:  #FCFCFC;
 }
 
-body{
-  font-family: 'Roboto', sans-serif; 
-  color: var(--title-color);
-  background-color: var(--secondary-text-color);
-}
-
+/* 
 .list {
     list-style: none;
 }
@@ -59,22 +51,105 @@ ol{
 }
 img{
     display: block;
+    max-width: 100%;
 }
 button{
     cursor: pointer;
-}
+} */
+/* 
 .container{
-    width: 1158px;
+    min-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+} */
+
+
+@media screen and (min-width: 1158px) {
+    .container{
+        width: 1158px;
+    }
+
+    /*  COMPONENT */
+
+    .section{
+        padding-top:120px;
+        padding-bottom: 120px;
+    }
+    
+/*  H E R O  */
+    .hero{
+        padding-top: 188px;   
+        padding-bottom: 188px;   
+       }
+       
+/* === Policy=== */
+
+.policy-list{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
 }
 
-.section{
-    padding-top:120px;
+.policy-item-icon{
+    max-width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--filter-btn-ground);
+    border-radius: 4px;
+ }
+
+ .policy-icon{
+    display: block;
+    width: 64px;
+    height: 64px;
+   }
+
+    .policy-item{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        margin-top: 8px;
+        }
+
+    .policy-text{
+        font-weight: 400;
+        
+    }  
+    
+  /*  O U R   T E A M  */
+
+  .team-list{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+   }
+
+.customers{
+    padding-top: 130px;
     padding-bottom: 120px;
 }
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+    margin-left: 156px;
+ }
+
+}
+
+
+
+
+/* .section{
+    padding-top:120px;
+    padding-bottom: 120px;
+} */
+
+
 /* .title{
     margin-bottom: 72px;
 } */
@@ -194,7 +269,7 @@ color: var(--filter-active-btn-ground);
 /* =============== / Heder========== */
 /* =============== h e r o  =======*/
 
-.hero{
+/* .hero{
  max-width: 1440px;
  margin: 0 auto;
  padding-top: 188px;   
@@ -205,9 +280,9 @@ color: var(--filter-active-btn-ground);
  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-image.jpg);
  background-repeat: no-repeat;
  background-size: cover;
-}
+} */
 
-.hero-title{
+/* .hero-title{
 width: 496px;
 font-weight: 700;
 font-size: 56px;
@@ -217,7 +292,7 @@ color:var(--secondary-text-color);
 margin-bottom: 48px;
 margin-left: auto;
 margin-right: auto;
-}
+} */
 
 
 .modul-btn{
@@ -243,7 +318,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /* =========== /hero ========== */
 /* =========== Policy ========= */
 
-.policy-item-icon{
+/* .policy-item-icon{
     width: 264px;
     height: 112px;
     display: flex;
@@ -251,33 +326,36 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     background: var(--filter-btn-ground);
     border-radius: 4px;
- }
+ } */
 
- .policy-icon{
+ /* .policy-icon{
   width: 64px;
   height: 64px;
- }
+ } */
 
-.policy-list{
+/* .policy-list{
     display: flex;
-   gap: 24px;
-}
+    flex-wrap: wrap;
+    gap: 24px;
+} */
 .policy{
     padding-top: 120px;
 }
 
-.policy-item{
+/* .policy-item{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-top: 8px;
     margin-bottom: 8px;
-  }
-.policy-text{
+  } */
+
+
+/* .policy-text{
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
+} */
 /* =========== /Policy ======== */
 
 /* =========== Products ======= */
@@ -298,14 +376,16 @@ margin-bottom: 72px;
 /* =========== /Products ======= */
 
 /* =========== Our Team ======== */
-.team-list{
+/* .team-list{
     display: flex;
-   gap: 24px;
-}
-.team{
+    flex-wrap: wrap;
+    gap: 24px;
+} */
+/* .team{
   background: var(--filter-btn-ground);
-}
-.team-title{
+} */
+
+/* .team-title{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.1;
@@ -314,17 +394,18 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 margin-bottom: 72px;
-}
+} */
 
-.team-member-card{
+/* .team-member-card{
 background: var(--secondary-text-color);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
-}
+} */
 
-.team-member-card-descr{
+/* .team-member-card-descr{
 padding: 32px 16px;
 }
+
 .team-member{
 font-weight: 500;
 font-size: 20px;
@@ -341,9 +422,9 @@ text-align: center;
 letter-spacing: 0.02em;
 color: var(--text-color);
 margin-bottom: 8px;
-}
+} */
 
-.social-list{
+/* .social-list{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -370,7 +451,7 @@ margin-bottom: 8px;
 .social-list-item-link:focus{
  background-color: var(--filter-active-btn-ground);
  
-}
+} */
 
 
 /* =========== /Our Team ======== */
@@ -378,13 +459,13 @@ margin-bottom: 8px;
 /* =========== Customers ======== */
 
 
-.customers{
+/* .customers{
     padding-top: 130px;
     padding-bottom: 120px;
-}
+} */
 
 
-.customers-title {
+/* .customers-title {
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -393,13 +474,15 @@ letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--title-color);
 margin-bottom: 72px;
-}
-.customers-list {
+} */
+
+
+/* .customers-list {
     display: flex;
     gap: 24px;
- }
+ } */
 
-.customers-item{
+/* .customers-item{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -409,16 +492,16 @@ margin-bottom: 72px;
     border: 1px solid var(--customer-icons-color);
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.customers-item-icon {
+/* .customers-item-icon {
     width: 104px;
     height: 56px;
     fill: var(--customer-icons-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.customers-item:hover,
+/* .customers-item:hover,
 .customers-item:focus{
  border-color: var(--filter-active-btn-ground);
  
@@ -428,7 +511,7 @@ margin-bottom: 72px;
 .customers-item:focus .customers-item-icon{
   fill: var(--filter-active-btn-ground);
  
-}
+} */
 /* ===========/Customers========= */
 
 
