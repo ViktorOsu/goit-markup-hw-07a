@@ -86,6 +86,10 @@ button{
        
 /* === Policy=== */
 
+.policy{
+    padding-left: 141px;
+    padding-right: 141px;
+}
 .policy-list{
     display: flex;
     flex-wrap: nowrap;
@@ -139,6 +143,52 @@ button{
     margin-left: 156px;
  }
 
+ /* F O O T E R */
+
+ .footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .footer-description{
+    margin-right: 120px;
+    margin-bottom: 0;
+}
+
+.subscribe-box{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+   }
+    
+   .footer-list{
+    margin: 0 auto;  
+   } 
+
+   .subscribe-title{
+    margin-left: 0;
+  }
+
+  .subscribe-box{
+    display: flex;
+    gap: 24px;
+    margin-bottom: 0;
+    }
+
+     .subscribe-email{
+    width: 264px;
+    }
+
+    .footer-subscribe{
+        margin-left: 0;
+    }
+
+    
 }
 
 
@@ -163,7 +213,7 @@ button{
    border-bottom: 1px solid var(--footer-text-color);
 }
 
-.logo{
+/* .logo{
 font-family: var(--secondary-font);
 font-weight: 800;
 font-size: 18px;
@@ -177,7 +227,7 @@ margin-right: 76px;
 
 .logo-part-upper{
 color: var(--title-color) ;
-}
+} */
 
 /* site-nav */
 
@@ -517,45 +567,47 @@ margin-bottom: 72px;
 
 
 /* ============ Footer ========== */
-.footer{
+
+/* .footer{
 background: var(--title-color);
 padding-top: 100px;
 padding-bottom: 100px;
-}
+} */
 
-.footer-content{
+/* .footer-content{
     display: flex;
-}
-.footer-description{
-    margin-right: 120px;
-}
+} */
 
-.logo-part-down{
+/* .footer-description{
+    margin-right: 120px;
+} */
+
+/* .logo-part-down{
 line-height: 1.17;
 color: var(--filter-btn-ground);
-}
+} */
 
-.footer-text{
+/* .footer-text{
 width: 264px;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--footer-text-color);
 margin-top: 16px;
-}
+} */
 
-.footer-media{
+/* .footer-media{
     margin-right: 80px;
-}
+} */
 
 
-.footer-list{
+/* .footer-list{
   display: flex;
   gap: 16px;
   margin: 0 auto;  
- }
+ } */
 
- .footer-link{
+ /* .footer-link{
    display: flex;
    justify-content: center;
    align-items: center;
@@ -569,38 +621,37 @@ margin-top: 16px;
   .footer-link:hover,
   .footer-link:focus{
     background-color: #31D0AA;
-   
-  }
+   } */
 
  
-  .footer-title{
+  /* .footer-title{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--secondary-text-color);
     margin-bottom: 16px;
-    }
+    } */
 
-   .footer-icon{
+   /* .footer-icon{
     width: 24px;
     height: 24px;
     fill: var(--secondary-text-color);
-   }
+   } */
 
-   .subscribe-title{
+   /* .subscribe-title{
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
     margin-bottom: 16px;
-   }
+   } */
 
-   .subscribe-box{
+   /* .subscribe-box{
     display: flex;
     gap: 24px;
-   }
+   } */
 
-   .subscribe-email{
+   /* .subscribe-email{
     width: 264px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -614,14 +665,14 @@ margin-top: 16px;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
-    }
+    } */
 
-    .subscribe-email::placeholder{
+    /* .subscribe-email::placeholder{
         font-size: 12px;
         line-height: 2.0;
         letter-spacing: 0.04em;
         color: rgba(255, 255, 255, 0.6);
-    }
+    } */
     .modal-input{
         width: 100%;
         height: 40px;
@@ -633,7 +684,7 @@ margin-top: 16px;
         margin-top: 4px;
         transition
     }
-  
+/*   
     .subscribe-text{
     width: 165px;
     height: 40px;
@@ -651,20 +702,20 @@ margin-top: 16px;
     border: none;
     position: relative;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
+   } */
 
-   .subscribe-text:hover,
+   /* .subscribe-text:hover,
    .subscribe-text:focus{
      background-color: var(--filter-active-btn-ground);
    }
+ */
 
-
-   .subscribe-icon{
+   /* .subscribe-icon{
     fill: var(--secondary-text-color);
     position: absolute;
     right: 24px;;
-   }
-/* ============ /Footer ========== */
+   } */
+============ /Footer ==========
 
 
 /* ========= Filter ====== */

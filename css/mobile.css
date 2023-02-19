@@ -10,7 +10,23 @@
     padding-top: 96px;
     padding-bottom: 96px;
 }
+ /*   H E A D E R  */
 
+ .logo{
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--background-href-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 76px;
+    }
+    
+    .logo-part-upper{
+    color: var(--title-color) ;
+    }
 /* ====== Hero ======== */
 .hero{
     max-width: 1440px;
@@ -152,8 +168,7 @@
     .customers{
         padding-top: 96px;
         padding-bottom: 96px;
-        padding-left: 8px;
-        padding-right: 8px;
+       
     }
 
     .customers-title {
@@ -206,6 +221,161 @@
      fill: var(--filter-active-btn-ground);
     }
 
+     /*  F O O T E R */
+
+     
+    .footer-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .logo-part-down{
+        line-height: 1.17;
+        color: var(--filter-btn-ground);
+        }
+        
+    .subscribe-box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+       }
+    
+
+   
+
+    .footer{
+        background: var(--title-color);
+        padding-top: 96px;
+        padding-bottom: 96px;
+        }
+        
+    .footer-description{
+            margin-left: 65px;
+            margin-right: auto;
+        }
+
+     
+   .footer-title{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--secondary-text-color);
+    margin-top: 72px;
+    margin-left: 151px;
+    margin-bottom: 16px;
+    }
+   
+    .footer-text{
+        width: 264px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--footer-text-color);
+        margin-top: 16px;
+        }
+        
+   
+    .footer-list{
+    display: flex;
+    gap: 16px;
+    margin-left: 95px; 
+    margin-bottom: 72px;
+   }
+  
+   .footer-icon{
+    width: 24px;
+    height: 24px;
+    fill: var(--secondary-text-color);
+   }
+
+   .subscribe-title{
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
+    margin-left: 161px;
+   }
+
+   .subscribe-box{
+    margin-bottom: 16px;
+   }
+
+   .subscribe-email{
+    min-width: 398px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--title-color);
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 2.0;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    }
+
+    .subscribe-email::placeholder{
+        font-size: 12px;
+        line-height: 2.0;
+        letter-spacing: 0.04em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .subscribe-text{
+        width: 165px;
+        height: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        display: flex;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 16px;
+        color: var(--secondary-text-color);
+        background:var(--background-href-color);
+        border-radius: 4px;
+        border: none;
+        position: relative;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-left: auto;
+        margin-right: auto;  
+    }
+
+       .subscribe-text:hover,
+       .subscribe-text:focus{
+         background-color: var(--filter-active-btn-ground);
+       }
+    
+       .subscribe-icon{
+        fill: var(--secondary-text-color);
+        position: absolute;
+        right: 24px;;
+       }
+    
+       .footer-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background-color: var(--text-color);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+       }
+     
+       .footer-link:hover,
+       .footer-link:focus{
+         background-color: #31D0AA;
+        }
+     
+     
 @media screen and (min-width: 480px){
     .container{
         width: 428px;
