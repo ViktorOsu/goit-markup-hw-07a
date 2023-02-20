@@ -57,7 +57,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-open">
+        <button type="button" class="menu-open" data-menu-open>
           <svg class="menu-open-icon">
             <use href="./images/sprite.svg#icon-hamburger"></use>
           </svg>
@@ -66,9 +66,10 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
 
 <!--  M E N U -->
          
-         <div class="mob-menu">
-          <div class="container">
-          <button type="button" class="menu-close">
+         <div class="mob-menu is-hidden" data-menu>
+          <div class="mob-container">
+            <div>
+          <button type="button" class="menu-close" data-menu-close>
            <svg class="menu-close-icon" width="8" height="8">
              <use href="./images/sprite.svg#icon-close"></use>
           </svg>
@@ -87,7 +88,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
              </li>
            </ul>
           </div>
+        </div>
 
+        <div>
           <a class="mob-menu-tel link" href="tel:+11(000)1111111"
           >+11 (000) 111-11-11</a>
  
@@ -146,7 +149,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
              </a>
           </li>
          </ul>
-   
+        </div>
         </div>
       </div> 
     </header>
@@ -693,6 +696,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         </form>
       </div>
     </div> -->
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
