@@ -27,6 +27,14 @@
     .logo-part-upper{
     color: var(--title-color) ;
     }
+
+
+
+
+
+
+
+    
 /* ====== Hero ======== */
 .hero{
     max-width: 1440px;
@@ -52,6 +60,27 @@
     margin-left: auto;
     margin-right: auto;
     }
+
+    .modul-btn{
+        padding: 16px 32px;
+        border: none;
+        font-family: var(--primary-font);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: var(--secondary-text-color);
+        background: var(--background-href-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .modul-btn:hover,
+        .modul-btn:focus{
+         background-color: var(--filter-active-btn-ground);
+         }
+        
 
     /* =========Policy======= */
 
@@ -381,4 +410,18 @@
         width: 428px;
     }
 
+    .product{
+        display: none;
+    }
+
+    .address{
+        display: none;
+        flex-direction: column;
+        margin-right: 16px;
+     }
+     
+     .site-nav{
+         display: none;
+     }
+     
 }

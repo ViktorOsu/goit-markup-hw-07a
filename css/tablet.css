@@ -1,3 +1,72 @@
+/*  H E A D E R */
+    
+.page-header{
+    border-bottom: 1px solid var(--footer-text-color);
+ }
+ 
+
+
+/* .address{
+    display: flex;
+   flex-direction: column;
+   margin-right: 16px;
+} */
+
+
+
+.contact-email,
+.contact-phone-number{
+display: flex;
+font-style: normal;
+font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+color: var(--text-color);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.contact-email:hover,
+.contact-email:focus{
+    color: var(--filter-active-btn-ground);
+}
+
+.contact-phone-number:hover,
+.contact-phone-number:focus{
+    color: var(--filter-active-btn-ground);
+}
+
+.page-header-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 24px;
+   padding-bottom: 10px;
+   padding-right: 36px;
+}
+
+.page-nav{
+   display: flex;
+   align-items: center;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+
+.contact-email{
+    margin-right: 40px;
+    margin-bottom: 4px;
+}
+
+.contact-phone-number{
+    margin-right: 40px;
+}
+
 /* policy */
 
 .policy-list{
@@ -23,6 +92,66 @@
         width: 768px;
     }
 
+    /*  H E A D E R */
+
+    .logo{
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        margin-left: 16px;
+        margin-right: 120px;
+        }
+
+        .address{
+           display: flex;
+           flex-direction: column;
+           margin-right: 16px;
+        }
+        
+        .site-nav{
+            display: flex;
+        }
+        
+        .menu-item:not(:last-child){
+            margin-right: 40px;
+        }
+        
+        
+        .menu-link.menu-active{
+          position: relative;
+          color: var(--filter-active-btn-ground)
+        }
+        
+        .menu-active::after{
+            content: "";
+            display: block;
+            height: 4px;
+            width: 100%;
+            border-radius: 4px;
+            background-color: var(--filter-active-btn-ground);
+            position: absolute;
+            bottom: -20px;
+        }    
+        
+        .menu-link{
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--title-color);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+        }
+        
+        .menu-link:hover,
+        .menu-link:focus{
+          color: var(--filter-active-btn-ground);
+          
+        }
+        
+        .menu-link:active{
+        color: var(--filter-active-btn-ground);
+        }
+            
+        
     /*  H E R O */
     .hero{
         padding-top: 112px;   
@@ -49,6 +178,13 @@
         margin-right: 0;
         margin-left: 0;
     }
+
+    /*  P R O D U C T  */
+
+    .product{
+        display: none;
+    }
+
 
     /*  O U R   T E A M  */
 
