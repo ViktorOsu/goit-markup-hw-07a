@@ -273,6 +273,7 @@ display: block;
     width: 30px;
     height: 19px;
     stroke: var(--title-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-item-icon {
@@ -280,6 +281,7 @@ display: block;
 .mob-soc-item {
 }
 .mob-soc-link {
+    
 }
 
 .mob-menu {
@@ -289,7 +291,9 @@ display: block;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     position: fixed;
     top: 0;
-}
+    padding-top: 24px;
+    padding-bottom: 40px;
+ }
 
 .menu-close {
     width: 24px;
@@ -297,25 +301,99 @@ display: block;
     border-radius: 50%;
     background-color:var(--footer-text-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-bottom: 32px;  
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
 .menu-close-icon {
-
-    fill: #000000;
+   fill: #000000;
 }
 
-.mob-menu-item {
+.mob-menu-item{
+    margin-left: 40px;
+}
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.mob-menu-list{
+    margin-bottom: 284px;
 }
 .mob-menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-color);
 }
+
+.mob-menu-tel{
+    display: block;
+    margin-bottom: 40px;
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 1.11;
+   text-transform: capitalize;
+   color: var(--background-href-color);
+   margin-left: 40px;
+
+
+}
+
 .menu-active {
 }
+
 .mob-menu-email {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-top: 40px;
+    margin-bottom: 48px;
+    margin-left: 40px;
 }
-.mob-menu-phone-number {
-}
+
 .mob-soc-list {
+    position: relative;
+    padding-left: 40px;
+    max-width: 328px;
+   display: flex;
+    gap: 56px;
+    
+ 
+
 }
-.mob-soc-list-item-icon {
+
+.mob-soc-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: var(--background-href-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-soc-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--secondary-text-color);
+  
+}
+
+
+.mob-soc-link:hover,
+.mob-soc-link:focus{
+ background-color: var(--filter-active-btn-ground);
 }
 
 /* M O B   M E N U */
@@ -986,6 +1064,7 @@ overflow: auto;
     transform: translate(-50%, -50%) scale(0);
 
 }
+
 .modal-close{
     position: absolute;
     top:24px;
