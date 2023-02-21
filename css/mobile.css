@@ -244,6 +244,10 @@
     display: none;
     }
 
+    .policy-item-icon{
+        background: none;
+    }
+
     /* ===========Our Team====== */
 
     .team-list{
@@ -566,6 +570,7 @@
         padding-right: 0;
     }
      */
+      
     .team-list{
         padding-left: 82px;
         padding-right: 82px;
