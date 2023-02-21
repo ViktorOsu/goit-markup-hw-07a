@@ -142,6 +142,7 @@
     margin-left: 40px;
     display: flex;
     justify-content: space-between;
+    margin-right: 40px;
 }
 
 
@@ -261,6 +262,7 @@
         padding-left: 0;
         padding-right: 0;
         row-gap: 72px;
+        justify-content: center;
     }
 
     .team{
@@ -582,7 +584,7 @@
             left: 50%;
             transform: translate(-50%, -50%) scale(1);
             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            max-width: 392px;
+            width: 408px;
             min-height: 586px;
             border-radius: 4px;
             background:var(--modal-background);
@@ -876,10 +878,12 @@
       .modal{
         width: 100%;
         height: auto;
-        
+      
       }
 
-    }
+      .policy-list{
+        margin-top: 96px;
+     }
 
 
 

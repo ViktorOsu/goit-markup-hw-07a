@@ -113,12 +113,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* policy */
 
-.policy-list{
+/* .policy-list{
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    margin-bottom: 96px;
 }
-
+ */
 
 
 /* F O O T E R */
@@ -209,6 +210,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-left: 0;
     }
 
+    .policy-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 96px;
+    }
+    
     .policy-text:last-child{
      
     }
@@ -292,7 +300,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .subscribe-email{
 
-        min-width: 264px;
+        width: 264px;
         height: 40px;
         padding-right: 24px;
     }
