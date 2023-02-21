@@ -58,7 +58,17 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </address>
-      </div>
+
+        <!--    M E N U  -->
+
+
+        <button type="button" class="menu-open" data-menu-open>
+          <svg class="menu-open-icon">
+            <use href="./images/sprite.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+        </div>
+ 
     </header>
 
     <main>
@@ -328,5 +338,96 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
           </div>
       </div>
     </footer>
+    <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-container">
+        <div>
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+
+         
+          <div>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link menu-active" href="">Studio</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <a class="mob-menu-tel link" href="tel:+11(000)1111111"
+            >+11 (000) 111-11-11</a
+          >
+
+          <a class="mob-menu-email link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a
+                class="mob-soc-link link"
+                href="#"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg class="mob-soc-icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href="#"
+                class="mob-soc-link link"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg class="mob-soc-icon">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href="#"
+                class="mob-soc-link link"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg class="mob-soc-icon">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a
+                href="#"
+                class="mob-soc-link link"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+              >
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
