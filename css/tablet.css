@@ -267,7 +267,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .customers-link {
 
-        width: calc((100% - 48px) / 3);
+        width: 168px;
     }
     /*  F O O T E R */
 
